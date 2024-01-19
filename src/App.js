@@ -1,10 +1,10 @@
 import React from 'react'
-import RefsClass from './refs-class'
+import RefsFunc from './refs-func'
 
 function App() {
   return (
     <>
-    <RefsClass/>
+    <RefsFunc/>
     </>
   )
 }
