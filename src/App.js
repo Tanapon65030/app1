@@ -1,11 +1,12 @@
 import React from 'react'
-import MessageBox from './state-func'
+import {useContext} from './context'
+import Content from './context-content'
 
 function App() {
   return (
-    <>
-    <MessageBox/>
-    </>
+    <useContext.Provider value={'Tom Jerry'}>
+    <Content/>
+    </useContext.Provider>
   )
 }
 
