@@ -28,15 +28,13 @@ export default function Router3() {
                     Contact Us
                 </NavLink>
             </nav>
-            <div style={{ margin: '20px' }}>
-                <Routes>
+            <Routes style={{ margin: '20px' }}>
                     <Route path="/" element={<Home />} />
                     <Route path="/products" element={<Products />} />
                     <Route path="/member" Component={MemberPage} />
                     <Route path="/contact" element={<div style={{ textAlign: 'center' }}>Contact Page</div>} />
                     <Route path="/*" element={<div style={{ textAlign: 'center' }}>Error 404 Not Found</div>} />
-                </Routes>
-            </div>
+            </Routes>
         </BrowserRouter>
 
     )
