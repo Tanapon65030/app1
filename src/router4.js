@@ -6,9 +6,9 @@ import Home from './home';
 import MemberPage from './member';
 
 export default function Router4() {
-  return (
-    <BrowserRouter>
-    <nav className="nav">
+    return (
+        <BrowserRouter>
+            <nav className="nav">
                 <NavLink
                     to='/'
                     className={({ isActive }) => isActive ? "active_menu" : "menu"}
@@ -29,13 +29,13 @@ export default function Router4() {
                     Contact Us
                 </NavLink>
             </nav>
-      <Routes style={{ margin: '20px' }}>
-        <Route path="/" element={<Home />} />
-        <Route path="/products" element={<Products />} />
-        <Route path="/member" element={<MemberPage />} />
-        <Route path="/contact" element={<div style={{ textAlign: 'center' }}>Contact Page</div>} />
-        <Route path="/*" element={<Navigate to="/" />} />
-      </Routes>
-    </BrowserRouter>
-  );
+            <Routes style={{ margin: '20px' }}>
+                <Route path="/" element={<Home />} />
+                <Route path="/products" element={<Products />} />
+                <Route path="/member" Component={MemberPage} />
+                <Route path="/contact" element={<div style={{ textAlign: 'center' }}>Contact Page</div>} />
+                <Route path="/*" element={<Navigate to="/" />} />
+            </Routes>
+        </BrowserRouter>
+    );
 }

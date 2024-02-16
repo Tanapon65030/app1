@@ -1,9 +1,8 @@
 import React from 'react';
 
-const MemberPage = () => {
+export default function MemberPage() {
     return (
         <div style={{ textAlign: 'center' }}>Member Page</div>
     );
 }
 
-export default MemberPage;
