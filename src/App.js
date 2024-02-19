@@ -1,9 +1,5 @@
-import React from 'react';
-import Router4 from './router4';
-
+import React from 'react'
+import FormSearch from './form-search';
 export default function App() {
-
-  return (
-      <Router4 />
-  );
+  return <FormSearch />
 }
